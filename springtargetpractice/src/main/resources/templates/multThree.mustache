@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Target Practice</title>
+</head>
+<body>
+<form action="/multThree" method="POST">
+    <input type="number" id="num1" name="num1">
+    <input type="number" id="num2" name="num2">
+    <input type="number" id="num3" name="num3">
+    <br>
+    <button>Multiply!</button>
+    <br>
+</form>
+{{#total}}
+    <p id="total">Total:{{.}}</p>
+{{/total}}
+{{^total}}
+    0
+{{/total}}
+</body>
+</html>

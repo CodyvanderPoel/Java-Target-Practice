@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Target Practice</title>
+</head>
+<body>
+<form action="/earnings" method="POST">
+    <p>Seats A:<input type="number" id="num1" name="num1"></p>
+    <br>
+    <p>Seats B:<input type="number" id="num2" name="num2"></p>
+    <br>
+    <p>Seats C:<input type="number" id="num3" name="num3"></p>
+    <br>
+    <button>Calculate!</button>
+    <br>
+</form>
+{{#total}}
+    <p id="total">Total:{{.}}</p>
+{{/total}}
+{{^total}}
+    No Money Made!
+{{/total}}
+</body>
+</html>
