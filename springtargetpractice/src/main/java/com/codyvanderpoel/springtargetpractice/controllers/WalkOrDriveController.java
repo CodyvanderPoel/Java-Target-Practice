@@ -9,10 +9,10 @@ import org.springframework.ui.Model;
 
 
 @Controller
-@RequestMapping("/walkordrive")
+@RequestMapping("/walkOrDrive")
 public class WalkOrDriveController {
     @GetMapping
-    public String getMethod() {
+    public String getWalkOrDrive() {
         return "walkOrDrive";
     }
 
