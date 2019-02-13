@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Target Practice</title>
+</head>
+<body>
+<form action="/HowManyPoints" method="POST">
+    <p>[1] for Extra Kick<br>[2] for Extra Conversion<br>[3] for Safety<br>[4] for Field Goal<br>[5] for Touchdown </p>
+    <input type="number" min="1" max="5" id="action" name="action">
+    <br>
+    <button>How Many Points</button>
+    <br>
+</form>
+{{#points}}
+    <p id="points">Points: {{.}}</p>
+{{/points}}
+{{^points}}
+    NO POINTS!
+{{/points}}
+</body>
+</html>
